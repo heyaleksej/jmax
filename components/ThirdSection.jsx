@@ -15,6 +15,7 @@ function ThirdSection() {
               alt="vector"
               width={30}
               height={26}
+              style={{userSelect:'none'}}
               className="dots absolute bottom-0 sm:-bottom-3 -left-9 sm:w-[68px] lg:-left-32 "
             />
             <h2 className=" text-gold gold-underline">EXPERIENCE </h2>

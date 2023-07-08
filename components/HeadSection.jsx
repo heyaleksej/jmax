@@ -69,6 +69,8 @@ const HeadSection = () => {
             alt="vector"
             width={94}
             height={81}
+            style={{userSelect:'none'}}
+
             className="dots hidden xl:block absolute bottom-12 right-52 z-10"
           />
         </div>
@@ -86,6 +88,7 @@ const HeadSection = () => {
         alt="vector"
         width={1667}
         height={566}
+        style={{userSelect:'none'}}
         className="green-light absolute  -bottom-11 lg:-bottom-40 xl:-bottom-[430px] -left-1 z-0"
       />
       <Image
