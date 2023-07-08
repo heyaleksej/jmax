@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.green-underline {
+  text-decoration-color: #44937d;
+}
+.gold-underline {
+  text-decoration-color: #B3A779;
+  text-decoration: underline;
+}
+.gray-through {
+  text-decoration-color: #9EB7B0 ;
+  text-decoration: line-through;
+}
+/* cubic-bezier(.55,.5,.45,.55)   */
+
+/* Waves animation */
+.waves > img:nth-child(1) {
+  animation: first-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.55) infinite;
+  animation-delay: 0s;
+  animation-duration: 5s;
+  z-index: 0;
+}
+
+@keyframes first-forever {
+  0% {
+    width: 4290px;
+    transform: translateX(-456px) rotateX(90deg) rotateY(0deg);
+  }
+
+  50% {
+    width: 4290px;
+
+    transform: translateX(-226px) rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    width: 4280px;
+
+    transform: translateX(6px) rotateX(90deg) rotateY(0deg);
+  }
+}
+
+.clients-container {
+  background: linear-gradient(264.71deg, #18201e 0%, #121212 100%);
+}
+
+/* Client Logos Animation */
+.clients-animation-container {
+  background: rgba(244, 244, 244, 0.35);
+  border: 1.30346px dashed #51c14f;
+  backdrop-filter: blur(8.68976px);
+  transform: rotate(7.19deg);
+}
+.clients-animation-back-container {
+  background: rgba(225, 225, 225, 0.35);
+  opacity: 0.3;
+  border: 1.30346px dashed #51c14f;
+  filter: blur(2.17244px);
+  transform: rotate(-5.68deg);
+}
+
+.clients-animation-container > img {
+  animation: move-forever 40s linear infinite;
+  animation-delay: 0s;
+  animation-duration: 40s;
+  z-index: 0;
+}
+.clients-animation-back-container > img {
+  animation: move-forever-back 40s linear infinite;
+  animation-delay: 0s;
+  animation-duration: 40s;
+  z-index: 0;
+}
+
+
+@keyframes move-forever {
+  0% {
+      transform: translateX(0) rotate(-7.19deg);
+    }
+    100% {
+      transform: translateX(calc(100% + 496px)) rotate(-7.19deg);
+    }
+}
+@keyframes move-forever-back {
+  0% {
+      transform: translateX(0) rotate(-5.68deg);
+    }
+    100% {
+      transform: translateX(calc(100% - 496px)) rotate(-5.68deg);
+    }
+}
+
+/* Package Swiper Table */
+
+.first-row{
+  height: 40px;
+}
+.second-row{
+  height: 55px;
+}
+
+/* Team Section  */
+.team-section-container{
+  background: linear-gradient(264.71deg, #18201E 0%, #121212 100%);
+}

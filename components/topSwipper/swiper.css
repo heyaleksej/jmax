@@ -1,0 +1,36 @@
+/* .swiper {
+  height: 450px;
+  width: 100% !important;
+}
+.swipper-wrapper {
+  height: 450px;
+  width: 100% !important;
+}
+.swiper-slide {
+  background-color: red;
+}
+
+
+.finger {
+  animation: fingerRotate 25s cubic-bezier(.55,.5,.45,.55) infinite;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  
+}
+
+@keyframes fingerRotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  
+  50% {
+    transform: rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+} */
+
+    .active-slide {
+      width: 50% !important;
+    }
