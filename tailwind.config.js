@@ -21,6 +21,20 @@ module.exports = {
         montserrat: ["var(--font-montserrat)"],
         donpoligrafbum: ["var(--font-donpoligrafbum)"],
       },
+      fontSize: {
+        sm: '0.8rem',
+        base: '1rem',
+        xl: '1.25rem',
+        '22px':'1.375rem',
+        '2xl': '1.563rem',
+        '3xl': '1.953rem',
+        '4xl': '2.441rem',
+        '5xl-custom': '3.375rem',
+      },
+      margin: {
+        '75px': '4.6875rem',
+        '137px': '8.5625rem',
+      }
     },
   },
   plugins: [

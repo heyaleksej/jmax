@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function TeamSection() {
   return (
-    <section className="team-section-container relative flex flex-col xl:flex-row-reverse xl:justify-between items-end w-full h-[590px] sm:h-[804px] xl:h-[643px] px-9 lg:px-32 mt-[80px] sm:mt-[100px] xl:mt-[160px] pt-12 xl:pb-[120px] xl:pt-[151px] ">
+    <section className="team-section-container relative flex flex-col xl:flex-row-reverse xl:justify-between items-end w-full px-9 lg:px-32 mt-[80px] sm:mt-[100px] xl:mt-[160px] py-12 xl:pb-[120px] xl:pt-[151px] ">
       <Image
         src="/tlight.svg"
         alt="green top"
@@ -75,7 +75,7 @@ function TeamSection() {
             Landing pages & online shops optimized for higher conversion rate
           </div>
         </div>
-        <div className="right-container flex flex-wrap justify-center items-end xl:w-[750px] gap-10 2xl:gap-20 ">
+        <div className="right-container flex flex-wrap justify-center items-end xl:w-[750px] gap-8 2xl:gap-20 ">
           <div className="person-container flex flex-col items-center gap-2">
             <div className="frame w-[74px] h-[74px] rounded-full flex justify-center bg-black bg-opacity-60 backdrop-filter backdrop-blur-10 ">
               <Image

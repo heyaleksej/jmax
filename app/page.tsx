@@ -6,18 +6,20 @@ import PlanSection from "../components/PlanSection";
 import GuaranteeSection from "../components/GuaranteeSection";
 import FaqSection from "../components/FaqSection";
 import TeamSection from "../components/TeamSection";
+import FeedBackSection from "../components/feedBackForm/FeedBackSection";
 
 export default function Home() {
-  return (
-    <main className="w-full overflow-x-hidden">
-      <HeadSection />
-      <SecondSection />
-      <ThirdSection />
-      <ClientsSection />
-      <PlanSection />
-      <GuaranteeSection />
-      <FaqSection />
-      <TeamSection />
-    </main>
-  );
+    return (
+        <main className="w-full overflow-x-hidden">
+            <HeadSection/>
+            <SecondSection/>
+            <ThirdSection/>
+            <ClientsSection/>
+            <PlanSection/>
+            <GuaranteeSection/>
+            <FaqSection/>
+            <TeamSection/>
+            <FeedBackSection/>
+        </main>
+    );
 }

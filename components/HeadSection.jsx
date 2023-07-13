@@ -32,14 +32,14 @@ const HeadSection = () => {
             <p className="text-primary font-semibold text-base sm:text-2xl lg:text-base xl:text-2xl ">
               Ние правим
             </p>
-            <div className="big-text-container font-donpoligrafbum h-fit sm:h-28 xl:h-44 flex flex-col justify-between text-gold  font-bold text-[15px] sm:text-xl lg:text-2xl xl:text-4xl ">
+            <div className="big-text-container font-donpoligrafbum sm:h-28 xl:h-44 flex flex-col justify-between text-gold  font-bold text-[15px] sm:text-xl lg:text-2xl xl:text-4xl ">
               <h1 className="xl:w-[750px] ">ЛЕНДИНГ СТРАНИЦИ</h1>
               <h1 className="xl:w-[750px] translate-x-9 sm:translate-x-14 lg:translate-x-44">
                 ОНЛАЙН МАГАЗИНИ
               </h1>
               <h1>УЕБ САЙТОВЕ</h1>
             </div>
-            <p className="text-primary sm:text-lg lg:text-lg xl:text-3xl xl:font-light max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-[620px] ">
+            <p className="text-primary mt-20 sm:text-lg lg:text-lg xl:text-3xl xl:font-light max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-[620px] ">
               И можем да се ангажираме с гаранция, че Вашият бизнес, ще започне
               да продава
             </p>
@@ -70,7 +70,6 @@ const HeadSection = () => {
             width={94}
             height={81}
             style={{userSelect:'none'}}
-
             className="dots hidden xl:block absolute bottom-12 right-52 z-10"
           />
         </div>

@@ -5,7 +5,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="w-full">
-      <nav className="absolute h-28 md:h-[123px] w-full flex justify-between bg-transparent z-50  fixed overflow-hidden px-9 lg:px-32">
+      <nav className="absolute h-28 md:h-[123px] w-full flex justify-between bg-transparent z-49  fixed px-9 lg:px-32">
         <div className="left-container flex items-center relative w-[43%] lg:w-[40%] h-[80px] lg:h-[120px] border-b-[1px] border-b-primary">
           <Image
             src="/Rectangle 15.svg"
@@ -35,7 +35,7 @@ const Navbar = () => {
               alt="logo"
               width={157}
               height={87}
-              className="m-auto lg:translate-y-1 w-20 lg:w-36 translate-y-3"
+              className="m-auto lg:translate-y-1 w-20 lg:w-36 h-28 py-5 translate-y-3"
             />
           </div>
           <p className="text-white w-1/2 font-montserrat lg:ml-9 mt-7 lg:mt-5 lg:font-semibold text-[10px] sm:text-lg block lg:hidden">
