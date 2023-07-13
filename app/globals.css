@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
     --black: #121212;
     --gray: #7D7D7D;
@@ -329,6 +332,10 @@ input[type="radio"]:checked + .custom-radio::before {
     border-radius: 3px;
 }
 
+.team{
+    color: rgba(13, 13, 13, 0.29);
+}
+
 .custom-checkbox::before {
     content: "";
     position: absolute;
@@ -356,6 +363,12 @@ input[type="radio"]:checked + .custom-radio::before {
     transition: opacity 0.2s ease;
 }
 
+.checkbox-wrapper{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}
+
 .custom-checkbox::before {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
@@ -364,16 +377,13 @@ input[type="radio"]:checked + .custom-radio::before {
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.checkbox-input:checked ~ .custom-checkbox::before,
-.checkbox-input:checked ~ .custom-checkbox::after {
+
+.checkbox-input:checked ~ .checkbox-wrapper .custom-checkbox::before,
+.checkbox-input:checked ~ .checkbox-wrapper .custom-checkbox::after {
     opacity: 1;
 }
 
-.checkbox-input:checked ~ .custom-checkbox {
+.checkbox-input:checked ~ .checkbox-wrapper .custom-checkbox {
     border-color: var(--green);
 }
-
-
-
-
 

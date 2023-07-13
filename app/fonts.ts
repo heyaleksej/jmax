@@ -1,5 +1,6 @@
-import { Montserrat } from "next/font/google";
+import { Montserrat, Ubuntu } from "next/font/google";
 import Donpoligrafbum from "next/font/local";
+
 
 // define your variable fonts
 export const montserrat = Montserrat({
@@ -8,6 +9,7 @@ export const montserrat = Montserrat({
   display: "swap",
   variable: "--font-montserrat",
 });
+
 
 export const donpoligrafbum = Donpoligrafbum({
   src: "../fonts/Donpoligrafbum-Bold.otf",

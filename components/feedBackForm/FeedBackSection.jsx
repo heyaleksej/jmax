@@ -136,32 +136,35 @@ const FeedBackSection = () => {
                     />
                     {errors.email && <span className="error-message">{errors.email}</span>}
 
-                    <div className="radio-buttons text-xs lg:text-lg flex flex-col lg:flex-row my-9 gap-7">
-                        <label className="flex  items-center	">
-                            <input
+                    <div className="flex flex-col lg:flex-row my-9 gap-7">
+                        <label className="flex items-center">
+                            <div className="w-[22px] h-[22px] mr-3 cursor-pointer mr-3">
+                                <input
                                 type="radio"
                                 name="choice"
                                 value="yes"
                                 checked={form.choice === "yes"}
                                 onChange={handleChange}
                                 required
-                                className="mr-3 cursor-pointer"
+                                className=" cursor-pointer w-[22px] h-[22px]"
                             />
-                            <span className="checkbox-label">
+                            </div>
+                            <span className="checkbox-label text-xs lg:text-lg ">
                             I don&apos;t have a website
                             </span>
                         </label>
-                        <label classNaaposme="flex  items-center">
-                            <input
+                        <label className="flex items-center">
+                            <div className="w-[22px] h-[22px] mr-3 cursor-pointer">
+                                <input
                                 type="radio"
                                 name="choice"
                                 value="no"
                                 checked={form.choice === "no"}
                                 onChange={handleChange}
                                 required
-                                className="mr-3 cursor-pointer"
                             />
-                            <span className="checkbox-label">
+                            </div>
+                            <span className="checkbox-label text-xs lg:text-lg ">
                                 I have a website and want to order a review
                             </span>
                         </label>
@@ -169,17 +172,19 @@ const FeedBackSection = () => {
                     {errors.choice && <span className="error-message">{errors.choice}</span>}
 
                     <div className="lg:flex lg:justify-between">
-                        <label className="checkbox-container flex text-xs lg:text-lg font-medium items-center">
+                        <label className="checkbox-container flex items-center">
                         <input
                             type="checkbox"
                             name="acceptance"
                             checked={form.acceptance}
                             onChange={handleChange}
                             required
-                            className="checkbox-input z-60"
+                            className="checkbox-input"
                         />
-                        <span className="custom-checkbox mr-3"></span>
-                        <span className="checkbox-label">I agree to the rules of personal data processing</span>
+                            <div className="mr-3 checkbox-wrapper">
+                                <span className="custom-checkbox z-60"></span>
+                            </div>
+                        <span className="checkbox-label font-medium text-xs lg:text-lg">I agree to the rules of personal data processing</span>
                     </label>
                         {errors.acceptance && <span className="error-message">{errors.acceptance}</span>}
 

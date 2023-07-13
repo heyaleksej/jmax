@@ -22,6 +22,7 @@ module.exports = {
         donpoligrafbum: ["var(--font-donpoligrafbum)"],
       },
       fontSize: {
+        xxs: '0.625rem',
         sm: '0.8rem',
         base: '1rem',
         xl: '1.25rem',
