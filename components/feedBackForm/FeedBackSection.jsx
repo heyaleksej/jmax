@@ -25,7 +25,6 @@ const FeedBackSection = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Validate form
         const formErrors = {};
         if (!form.name) {
             formErrors.name = "Please enter your name";
@@ -71,10 +70,9 @@ const FeedBackSection = () => {
                 <div className="text-base mb-5 lg:text-5xl-custom ml-7 lg:mb-10">application</div>
                 <div
                     className="text-base accent-text-gold ml-14
-                               lg:text-4xl lg:ml-137px"
-                >or do you have <br /> <span className="border-solid border-b-[1px] lg:border-b-[3px] border-gold h-[20px] lg:h-[48px] inline-block">questions?</span></div>
+                               lg:text-4xl lg:ml-137px">or do you have <br /> <span className="border-solid border-b-[1px] lg:border-b-[3px] border-gold h-[20px] lg:h-[48px] inline-block">questions?</span></div>
                 <div className="flex absolute -top-9 -right-9 sm:right-0
-                 lg:justify-end lg:pr-52 lg:pt-5 lg:bottom-0 lg:top-auto"	>
+                 lg:justify-end lg:pr-52 lg:pt-5 lg:bottom-0 lg:top-auto">
                     <Image
                     src="./vector-black.svg"
                     alt="vector"
@@ -150,10 +148,10 @@ const FeedBackSection = () => {
                                 className="mr-3 cursor-pointer"
                             />
                             <span className="checkbox-label">
-                            I don't have a website
+                            I don&apos;t have a website
                             </span>
                         </label>
-                        <label className="flex  items-center	">
+                        <label classNaaposme="flex  items-center">
                             <input
                                 type="radio"
                                 name="choice"
@@ -161,7 +159,7 @@ const FeedBackSection = () => {
                                 checked={form.choice === "no"}
                                 onChange={handleChange}
                                 required
-                                className="mr-3 cursor-pointer	"
+                                className="mr-3 cursor-pointer"
                             />
                             <span className="checkbox-label">
                                 I have a website and want to order a review
