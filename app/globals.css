@@ -17,6 +17,12 @@
 
 }
 
+.swiper {
+    overflow: visible !important;
+    width: 100%;
+    margin-left: unset !important;
+}
+
 body {
     color: var(--dark-gray);
 }
@@ -132,6 +138,7 @@ body {
 
 .second-row {
     height: 55px;
+    display: flex;
 }
 
 /* Team Section  */
@@ -226,8 +233,6 @@ body {
 }
 
 
-
-
 .form-field:focus {
     color: var(--green);
     border-bottom: 1px solid var(--green);
@@ -237,8 +242,6 @@ input[type="radio"]:checked ~ .checkbox-label,
 .checkbox-input:checked ~ .checkbox-label {
     color: var(--green);
 }
-
-
 
 
 .radio-buttons {
@@ -317,7 +320,7 @@ input[type="radio"]:checked + .custom-radio::before {
     pointer-events: none;
 }
 
-.checkbox-label{
+.checkbox-label {
     color: var(--dark-gray);
 }
 
@@ -330,7 +333,7 @@ input[type="radio"]:checked + .custom-radio::before {
     border-radius: 3px;
 }
 
-.team{
+.team {
     color: rgba(13, 13, 13, 0.29);
 }
 
@@ -347,6 +350,7 @@ input[type="radio"]:checked + .custom-radio::before {
     opacity: 0;
     transition: opacity 0.2s ease;
 }
+
 .custom-checkbox::after {
     content: "";
     position: absolute;
@@ -361,7 +365,7 @@ input[type="radio"]:checked + .custom-radio::before {
     transition: opacity 0.2s ease;
 }
 
-.checkbox-wrapper{
+.checkbox-wrapper {
     display: inline-block;
     width: 22px;
     height: 22px;

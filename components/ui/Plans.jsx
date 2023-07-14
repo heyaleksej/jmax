@@ -11,12 +11,12 @@ const Plans = () => {
             alt="line"
             width={84}
             height={100}
-            className="relative z-10 w-[125px] xl:w-[120px] "
+            className="relative z-10"
           />
-          <p className="shadoww text-[#DCEEE9] absolute tracking-[15px] left-9 sm:left-1/2 sm:transform sm:-translate-x-1/2 top-20 sm:top-12 xl:top-20 2xl:top-12 text-[45px] xl:text-[55px] 2xl:text-[80px] font-bold z-0 ">
+          <p className=" text-[#DCEEE9] absolute tracking-[15px] left-9 sm:left-1/2 sm:transform sm:-translate-x-1/2 top-20 sm:top-12 xl:top-20 2xl:top-12 text-[45px] xl:text-[55px] 2xl:text-[80px] font-bold z-0 ">
             LARGE
           </p>
-          <p className="relative z-10 text-gold text-3xl sm:text-4xl xl:text-[46px] font-bold tracking-[15px] -top-6 ">
+          <p className="relative z-10 text-gold text-3xl sm:text-4xl xl:text-[46px] font-bold tracking-[15px] ">
             LARGE
           </p>
           <p className="relative z-10 text-[#44937D] font-bold text-2xl xl:text-4xl">
@@ -34,8 +34,8 @@ const Plans = () => {
             />
             <p className="ml-3">
               {" "}
-              <span className="text-[10px] xl:text-base">Timeframe:</span>{" "}
-              <span className="text-[#44937D] text-sm font-bold ">
+              <span className="text-[10px] lg:text-base">Timeframe:</span>{" "}
+              <span className="text-[#44937D] text-sm font-bold lg:text-2xl ">
                 10 - 14 days
               </span>
             </p>
@@ -149,7 +149,7 @@ const Plans = () => {
           <table className="w-full xl:text-[18px] text-[#44937D] font-montserrat font-medium mt-[20px]">
             <tbody>
               <tr className="second-row">
-                <td className="w-11 ">
+                <td>
                   <Image
                     src="/video.svg"
                     alt="line"
@@ -221,19 +221,19 @@ const Plans = () => {
             alt="line"
             width={84}
             height={100}
-            className="relative z-10 w-[125px] xl:w-[120px] "
+            className="relative z-10"
           />
-          <p className="shadoww text-[#DCEEE9] absolute tracking-[15px] left-9 sm:left-1/2 sm:transform sm:-translate-x-1/2 top-20 sm:top-12 xl:top-20 2xl:top-12 text-[45px] xl:text-[55px] 2xl:text-[80px] font-bold z-0 ">
+          <p className=" text-[#DCEEE9] absolute tracking-[15px] left-9 sm:left-1/2 sm:transform sm:-translate-x-1/2 top-20 sm:top-12 xl:top-20 2xl:top-12 text-[45px] xl:text-[55px] 2xl:text-[80px] font-bold z-0 ">
             MEDIUM
           </p>
-          <p className="relative z-10 text-gold text-3xl sm:text-4xl xl:text-[46px] font-bold tracking-[15px] -top-7 ">
+          <p className="relative z-10 text-gold text-3xl sm:text-4xl xl:text-[46px] font-bold tracking-[15px] ">
             MEDIUM
           </p>
           <p className="relative z-10 text-[#44937D] font-bold text-2xl xl:text-4xl">
             ($5-10K)
           </p>
         </div>
-        <div className="body h-[475px] sm:h-[485px] xl:h-[509px] w-full bg-[#F3F8F3] mt-[10px] rounded-br-[30px] sm:rounded-br[60px] px-[13px] xl:pl-[28px] pt-[35px] ">
+        <div className="body relative h-[475px] sm:h-[485px] xl:h-[509px] w-full bg-[#F3F8F3] mt-[10px] rounded-br-[30px] sm:rounded-br[60px] px-[13px] xl:pl-[28px] pt-[35px] ">
           <div className="flex">
             <Image
               src="/time.svg"
@@ -244,8 +244,8 @@ const Plans = () => {
             />
             <p className="ml-3">
               {" "}
-              <span className="text-[10px] xl:text-base">Timeframe:</span>{" "}
-              <span className="text-[#44937D] text-sm font-bold ">
+              <span className="text-[10px] lg:text-base">Timeframe:</span>{" "}
+              <span className="text-[#44937D] text-sm lg:text-2xl font-bold ">
                 10 - 14 days
               </span>
             </p>
@@ -356,25 +356,25 @@ const Plans = () => {
         </div>
       </div>
       <div className="font-montserrat w-full max-w-[540px] !h-[985px] sm:!h-[1075px] xl:!h-[1168px] !bg-white ">
-        <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-0">
+        <div className="header relative w-full h-[220px] sm:h-[235px] xl:h-[266px] bg-[#F3F8F3] rounded-t-[30px] sm:rounded-t-[60px] flex flex-col items-center pt-[25px] xl:pt-7">
           <Image
             src="/small (2).svg"
             alt="line"
-            width={168}
-            height={160}
-            className="relative z-10 w-[125px] xl:w-[158px] "
+            width={84}
+            height={100}
+            className="relative z-10"
           />
-          <p className="shadoww text-[#DCEEE9] absolute tracking-[15px] left-9 sm:left-1/2 sm:transform sm:-translate-x-1/2 top-20 sm:top-12 xl:top-20 2xl:top-12 text-[45px] xl:text-[55px] 2xl:text-[80px] font-bold z-0 ">
+          <p className="text-[#DCEEE9] absolute tracking-[15px] left-9 sm:left-1/2 sm:transform sm:-translate-x-1/2 top-20 sm:top-12 xl:top-20 2xl:top-12 text-[45px] xl:text-[55px] 2xl:text-[80px] font-bold z-0 ">
             SMALL
           </p>
-          <p className="relative z-10 text-gold text-3xl sm:text-4xl xl:text-[46px] font-bold tracking-[15px] -top-8 ">
+          <p className="relative z-10 text-gold text-3xl sm:text-4xl xl:text-[46px] font-bold tracking-[15px]  ">
             SMALL
           </p>
           <p className="relative z-10 text-[#44937D] font-bold text-2xl xl:text-4xl">
             ($5-10K)
           </p>
         </div>
-        <div className="body h-[475px] sm:h-[485px] xl:h-[509px] w-full bg-[#F3F8F3] mt-[10px] rounded-br-[30px] sm:rounded-br[60px] px-[13px] xl:pl-[28px] pt-[35px] ">
+        <div className="body relative -[475px] sm:h-[485px] xl:h-[509px] w-full bg-[#F3F8F3] mt-[10px] rounded-br-[30px] sm:rounded-br[60px] px-[13px] xl:pl-[28px] pt-[35px] ">
           <div className="flex">
             <Image
               src="/time.svg"
@@ -385,8 +385,8 @@ const Plans = () => {
             />
             <p className="ml-3">
               {" "}
-              <span className="text-[10px] xl:text-base">Timeframe:</span>{" "}
-              <span className="text-[#44937D] text-sm font-bold ">
+              <span className="text-[10px] lg:text-base">Timeframe:</span>{" "}
+              <span className="text-[#44937D] text-sm lg:text-2xl font-bold ">
                 10 - 14 days
               </span>
             </p>

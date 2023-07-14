@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function GuaranteeSection() {
   return (
-    <section className="w-full relative flex font-montserrat flex-col  items-center bg-[#F3F8F3] px-9 lg:px-32 overflow-hidden">
+    <section className="w-full relative flex font-montserrat flex-col  items-center bg-[#F3F8F3] px-9 lg:px-32 lg:pb-5 overflow-hidden">
       <div className=" z-10 w-full flex justify-center">
         <Image
           src="/blackdots.svg"
@@ -18,7 +18,7 @@ function GuaranteeSection() {
           height={220}
           className="py-6 mr-[12px] w-[55px] sm:w-[80px] xl:w-[174px] xl:mr-[58px] sm:mr-[20px]"
         />
-          <p className="text-[54px] h-[54px] sm:text-[100px] sm:h-[100px] xl:text-[236px] xl:h-[236px] text-[#DEEBE7] bottom-12 font-bold absolute z-0">
+          <p className="text-[54px] h-[54px] sm:text-[100px] sm:h-[100px] xl:text-[236px] xl:h-[236px] text-[#DEEBE7] bottom-12 lg:bottom-20 font-bold absolute z-0">
               GUARANTEE
           </p>
       </div>

@@ -10,13 +10,11 @@ const BottomSwiper = () => {
   const [activeIndex, setActiveIndex] = useState(0); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 
   const handleChange = (swiper) => {
-    console.log(swiper.realIndex);
     setActiveIndex(swiper.realIndex);
   };
-  console.log(activeIndex);
   return (
     <>
-      <div className=" relative flex">
+      <div className="relative flex px-9">
         <Image src="/finger.svg" alt="scroll" width={63} height={56} className="finger"/>
         <Image
           src="/fingerarrow.svg"
@@ -30,8 +28,8 @@ const BottomSwiper = () => {
         // loop={true}
         freeMode={true}
         mousewheel={true}
-        spaceBetween={50}
-        slidesPerView={3}
+        spaceBetween={15}
+        slidesPerView={1}
         onActiveIndexChange={handleChange}
         className="!w-full !flex !justify-between"
       >

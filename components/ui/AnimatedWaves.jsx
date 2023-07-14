@@ -11,7 +11,7 @@ const AnimatedWaves = () => {
             width={5690}
             height={100}
             className="absolute w-[5690px] max-h-[550px] "
-            style={{ userSelect: 'none'}}
+            style={{ userSelect: 'none', color:'var(--green)'}}
           />
         </div>
       </div>

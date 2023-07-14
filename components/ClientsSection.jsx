@@ -3,13 +3,13 @@ import Image from "next/image";
 
 function ClientsSection() {
   return (
-    <section className="clients-container w-full relative h-[333px] sm:h-[470px] xl:h-[620px] overflow-hidden">
+    <section className="clients-container font-montserrat w-full relative h-[333px] sm:h-[470px] xl:h-[620px] overflow-hidden">
       <div className="text-container relative z-50 w-full h-24 flex flex-col sm:flex-row justify-between sm:justify-center sm:gap-5 sm:items-center xl:justify-between xl:px-32 mt-[62px] xl:mt-[92px] ">
-        <p className="text-gold flex w-[265px] sm:w-[320px] xl:w-[750px] justify-between items-center ml-6 sm:ml-0">
-          <span className="font-montserrat  gold-underline font-extralight text-lg xl:text-[46px] ">
+        <p className="text-gold flex w-[265px] sm:w-[320px] xl:w-[750px] justify-between items-center ml-9 sm:ml-0">
+          <span className="font-montserrat gold-underline font-extralight text-lg xl:text-[46px] ">
             our
           </span>{" "}
-          <span className="font-donpoligrafbum text-xl sm:text-[26px] font-bold xl:text-[66px] ">
+          <span className="font-donpoligrafbum text-xl sm:text-[26px] font-bold xl:text-[66px] xl:h-[66px] ">
             CLIENTS
           </span>{" "}
           <Image
