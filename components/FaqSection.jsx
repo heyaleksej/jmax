@@ -4,14 +4,14 @@ import React from "react";
 
 function FaqSection() {
   return (
-    <section className="px-9 sm:px-20 lg:px-32 relative">
+    <section className="px-9 pt-11 sm:px-20 lg:px-32 font-montserrat relative">
         <Image
             src="/Vector.svg"
             alt="vector"
             width={94}
             height={81}
             style={{userSelect:'none'}}
-            className="hidden sm:flex absolute -top-12 sm:right-0 lg:right-32 z-10 sm:w-[68px] sm:h-[58px] lg:w-[94px] lg:h-[81px]"
+            className="hidden sm:flex absolute -top-4 sm:right-0 lg:right-32 z-10 sm:w-[68px] sm:h-[58px] lg:w-[94px] lg:h-[81px]"
         />
       <div className="title-container sm:mb-9 lg:mb-0">
         <div className="first-container block sm:flex sm:gap-2 lg:gap-20 items-center w-full">

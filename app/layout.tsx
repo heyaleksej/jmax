@@ -10,7 +10,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${montserrat.variable} font-montserrat ${donpoligrafbum.variable}`} >
+    <html lang="en" className={`${montserrat.variable} ${donpoligrafbum.variable}`} >
       <body>
         <Navbar />
         {children}
