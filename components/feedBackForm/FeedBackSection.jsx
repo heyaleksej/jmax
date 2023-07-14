@@ -64,7 +64,7 @@ const FeedBackSection = () => {
                         className="font-donpoligrafbum leading-3 h-[0.35rem] text-xl sm:text-[36px] xl:text-[48px] 2xl:text-[54px] lg:h-0 lg:leading-[1.375rem] font-bold accent-text-gold">
                       You want
                      </span>
-                    <span className="gold-line h-[8px] w-[30px] lg:h-[18px] lg:w-[80px] ml-5"></span>
+                    <span className="bg-yellow h-[8px] w-[30px] lg:h-[18px] lg:w-[80px] ml-5"></span>
                 </div>
                 <div className="text-base lg:text-5xl-custom mt-5 lg:mt-12">to order a website or</div>
                 <div className="text-base mb-5 lg:text-5xl-custom ml-7 lg:mb-10">application</div>

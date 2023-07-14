@@ -13,9 +13,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        primary: "#51C14F",
-        secondary:"#44937D",
-        gold: "#B3A779",
+        primary: "var(--green)",
+        secondary:"var(--secondary)",
+        gold: "var(--yellow)",
+        darkGray:"var(--dark-gray)",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],

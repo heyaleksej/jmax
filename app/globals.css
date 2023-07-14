@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 :root {
+    --secondary: #44937D;
     --black: #121212;
     --gray: #7D7D7D;
     --dark-gray: #292929;
@@ -12,6 +13,12 @@
     --green-white: #EFF6F4;
     --white: #FFF;
     --yellow: #B3A779;
+    --dropdown-color: #F4F8F3;
+
+}
+
+body {
+    color: var(--dark-gray);
 }
 
 .green-underline {
@@ -157,15 +164,6 @@
     color: var(--green-white);
 }
 
-.text {
-    color: var(--green-white, #EFF6F4);
-    text-align: center;
-    font-family: Montserrat, serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 46px;
-}
 
 .left-footer-text {
     color: var(--green);
