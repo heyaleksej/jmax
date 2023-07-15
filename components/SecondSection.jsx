@@ -56,7 +56,7 @@ const SecondSection = () => {
             transition={{ duration: 2 }}
           >
             <Image
-              src="/Group-118.webp"
+              src="/number1.svg"
               alt="logo"
               width={105}
               height={110}

@@ -103,7 +103,7 @@ const HeadSection = () => {
         alt="vline"
         width={10}
         height={950}
-        className="vline absolute -bottom-[1150px] xl:-bottom-[1020px] right-1/2 -translate-x-11 sm:-translate-x-8 xl:-translate-x-32 z-0"
+        className="vline absolute -bottom-[925px] md:-bottom-[900px] xl:-bottom-[950px] right-1/2 -translate-x-11 sm:-translate-x-8 xl:-translate-x-32 z-0"
       />
     </section>
   );

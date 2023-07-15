@@ -9,9 +9,10 @@ export const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-
 export const donpoligrafbum = Donpoligrafbum({
   src: "../fonts/Donpoligrafbum-Bold.otf",
   display: "swap",
   variable: "--font-donpoligrafbum",
 });
+
+
