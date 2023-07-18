@@ -4,7 +4,7 @@ import React from "react";
 
 function FaqSection() {
   return (
-    <section className="px-9 pt-11 sm:px-20 lg:px-32 font-montserrat relative">
+    <section id="faq" className="px-9 pt-11 sm:px-20 lg:px-32 font-montserrat relative">
         <Image
             src="/Vector.svg"
             alt="vector"

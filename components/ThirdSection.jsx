@@ -2,7 +2,7 @@ import Image from "next/image";
 import BottomSwiper from "./bottomSwipper/BottomSwipper"
 function ThirdSection() {
   return (
-    <section>
+    <section id='develop'>
       <div className="w-full px-9 lg:px-[133px] my-10">
         <div className="title-container w-full font-donpoligrafbum leading-[1.5rem] lg:leading-normal	 text-sm sm:text-xl lg:text-2xl xl:text-[50px] font-bold flex flex-col justify-between">
           <div className=" w-full flex justify-end gap-3 xl:gap-7">

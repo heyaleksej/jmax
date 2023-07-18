@@ -31,6 +31,40 @@
   }
 } */
 
-    .active-slide {
-      width: 50% !important;
+.main-slide{
+    border-radius: 10px;
+    height: max-content;
+}
+
+.secondary-slide{
+
+}
+
+.slide-title{
+    background: rgba(0, 0, 0, 0.46);
+    backdrop-filter: blur(20px);
+}
+
+
+
+.portfolio .swiper-wrapper {
+    padding-left: 60px;
+}
+
+@media screen and (max-width: 640px) {
+    .portfolio .swiper-wrapper {
+        padding-left: 30px;
     }
+}
+
+.swiper-scrollbar-horizontal{
+    display: none;
+}
+
+.truncate-text{
+    margin: 0;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

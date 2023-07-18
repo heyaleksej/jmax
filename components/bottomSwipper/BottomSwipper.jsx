@@ -78,9 +78,13 @@ const BottomSwiper = () => {
                 slidesPerView: 2,
                 spaceBetween: 50,
               },
-              1560: {
+              1280: {
+                slidesPerView: 3,
+                spaceBetween: 52,
+              },
+              1920: {
                 slidesPerView: 4.5,
-                spaceBetween: 50,
+                spaceBetween: 55,
               },
             }}
             onActiveIndexChange={handleChange}

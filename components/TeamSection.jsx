@@ -30,7 +30,7 @@ function TeamSection() {
         },
     ];
     return (
-        <section
+        <section id="team"
                 className="team-section-container relative flex flex-col xl:flex-row-reverse xl:justify-between items-end w-full px-9 md:px-20 lg:px-32 mt-[80px] sm:mt-[100px] xl:mt-[160px] py-12 xl:py-36">
                 <Image
                     src="/tlight.svg"

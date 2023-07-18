@@ -17,6 +17,8 @@
 
 }
 
+
+
 .swiper {
     overflow: visible !important;
     width: 100%;
@@ -265,6 +267,14 @@ input[type="radio"]:checked ~ .checkbox-label,
     transform: translateX(-50%);
     background: #FFFFFF;
 }
+
+.open-button-icon {
+    position: absolute;
+    top: -16px;
+    left: 27%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.46);
+    backdrop-filter: blur(20px);}
 
 input[type="radio"] {
     appearance: none;

@@ -14,7 +14,7 @@ const SecondSection = () => {
   };
   return (
     <div className="font-montserrat w-full">
-      <section className="px-9 lg:px-32 pt-16 xl:pt-40 xl:flex xl:justify-between">
+      <section id="portfolio"  className="px-9 lg:px-32 pt-16 xl:pt-40 xl:flex xl:justify-between">
         <div className="left-container w-full xl:w-4/12">
           <p className="flex gap-3 lg:gap-4">
             {" "}
@@ -25,7 +25,7 @@ const SecondSection = () => {
               transition={{ duration: 2 }}
               // style={{ transform: `translateX(${transformX})` }}
             >
-              Нашето
+              our
             </motion.span>{" "}
             <motion.span
               className="text-gold font-donpoligrafbum text-xl lg:text-4xl"
@@ -33,7 +33,7 @@ const SecondSection = () => {
               whileInView={{ y: "0px", opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              ПОРТ
+              port
             </motion.span>
             <span className="font-bold text-5xl lg:text-8xl relative bottom-8 lg:bottom-[70px] ">
               {" "}
@@ -46,7 +46,7 @@ const SecondSection = () => {
             transition={{ duration: 2 }}
             className="text-gold gold-underline font-donpoligrafbum text-xl w-40 lg:text-4xl translate-x-40 lg:translate-x-48 -translate-y-5 lg:-translate-y-10"
           >
-            ФОЛИО
+            Folio
           </motion.p>
         </div>
         <div className="right-container  w-full xl:w-7/12 xl:pl-9 flex">
@@ -58,8 +58,8 @@ const SecondSection = () => {
             <Image
               src="/number1.svg"
               alt="logo"
-              width={105}
-              height={110}
+              width={140}
+              height={180}
               className="h-32"
             />
           </motion.div>
@@ -69,19 +69,16 @@ const SecondSection = () => {
             transition={{ duration: 1 }}
             className=" underline font-semibold text-xs sm:text-sm lg:text-lg w-full xl:max-w-4xl "
           >
-            Тук нашите конкуренти слагат фейк ревюта от несъществуващи свои
-            клиенти.{" "}
+            Here our competetors put fake client reviews.{" "}
             <span className="green-underline text-[#44937D] ">
-              Ние не правим така! Вместо това Ви приканваме, да позвъните по
-              телефона, на който и да е от нашите клиенти и да ги попитате
-              лично, дали са доволни от работата ни.
+               Instead of doing this, we encourage you to call ANY of our previous clients over the phone and ask them did we completed the project successfully.
             </span>
-            Всички проекти в нашето портфолио, са с активни линкове към тях.{" "}
+            {" "} Their websites are all listed in the portfolio section. {" "}
           </motion.p>
         </div>
       </section>
-      <div>
-        {/* <AnimatedWaves /> */}
+      <div className="relative pb-5">
+         <AnimatedWaves />
         <MySwiper />
       </div>
     </div>

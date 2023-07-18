@@ -4,7 +4,7 @@ import Plans from "./ui/Plans";
 import AnimatedWaves from "./ui/AnimatedWaves";
 function PlanSection() {
   return (
-    <section className="plan-container pt-5 relative w-full pb-10 px-9 md:px-20 lg:px-32 ">
+    <section id="price" className="plan-container pt-5 relative w-full pb-10 px-9 md:px-20 lg:px-32 ">
       <AnimatedWaves/>
       <p className="hidden lg:flex right-[-31rem] top-[50%] text-[54px] h-[54px] sm:text-[100px] sm:h-[100px] xl:text-[236px] xl:h-[236px] text-[#F8F8F8] tracking-[22px] bottom-12 lg:bottom-20 font-bold absolute z-0">
         FEATURES
@@ -23,11 +23,11 @@ function PlanSection() {
             CHOOSE PLAN
           </p>
           <div className="xl:pl-7">
-            <p className="font-montserrat text-gold text-lg sm:text-[46px] border-b-[1px] xl:border-b-[3px] leading-[1.1rem] xl:leading-[0.2rem] border-solid border-gold font-light sm:font-thin sm:py-2 xl:py-3 2xl:py-5">
+            <p className="font-montserrat text-gold text-lg sm:text-[46px] border-b-[1px] xl:border-b-[3px] leading-[1.1rem] lg:leading-[1rem] 2xl:leading-0 border-solid border-gold font-light sm:font-thin sm:py-2 xl:py-3 2xl:py-5">
               {" "}
               your
             </p>
-            <hr className="w-[30px] sm:w-[81px] h-2 border-gold border-t-[8px] sm:border-t-[18px] hidden xl:block translate-y-10 " />
+            <hr className="w-[30px] relative bottom-[0.5rem] 2xl:-bottom-[0.5rem] sm:w-[81px] h-2 border-gold border-t-[8px] sm:border-t-[18px] hidden xl:block translate-y-10 " />
           </div>
         </div>
 
