@@ -53,7 +53,7 @@ const FeedBackSection = () => {
         <div className="block lg:flex font-montserrat
         px-9 pb-10 pt-20
         md:px-20
-        justify-between lg:gap-14 feedback-section-container lg:py-36 lg:px-32">
+        justify-between lg:gap-14 feedback-section-container lg:py-20 lg:px-32">
             <div className="relative lg:w-1/2">
                 <div className="flex items-center justify-between sm:w-10/12 w-full lg:w-full">
                     <span
@@ -61,7 +61,7 @@ const FeedBackSection = () => {
                     Do
                     </span>
                      <span
-                        className="font-donpoligrafbum leading-3 h-[0.35rem] text-xl sm:text-[36px] xl:text-[48px] 2xl:text-[54px] lg:h-0 lg:leading-[1.375rem] font-bold accent-text-gold">
+                        className="font-donpoligrafbum leading-3 h-[0.35rem] text-xl sm:text-[36px] whitespace-nowrap lg:text-[48px] 2xl:text-[54px] lg:h-0 lg:leading-[1.375rem] font-bold accent-text-gold">
                       You want
                      </span>
                     <span className="bg-yellow h-[8px] w-[30px] lg:h-[18px] lg:w-[80px] ml-5"></span>
@@ -136,7 +136,7 @@ const FeedBackSection = () => {
                     />
                     {errors.email && <span className="error-message">{errors.email}</span>}
 
-                    <div className="flex flex-col lg:flex-row my-9 gap-7">
+                    <div className="flex flex-col lg:flex-row my-6 gap-7">
                         <label className="flex items-center">
                             <div className="w-[22px] h-[22px] mr-3 cursor-pointer mr-3">
                                 <input
