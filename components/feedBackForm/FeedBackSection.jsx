@@ -79,7 +79,7 @@ const FeedBackSection = () => {
                     width={94}
                     height={81}
                     style={{userSelect: 'none'}}
-                    className="w-[30px] md:w-[60px] lg:w-[90px] xl:block z-60"
+                    className="w-[30px] md:w-[60px] lg:w-[90px] xl:block z-60 relative left-[10rem]"
                     />
                 </div>
                 <Image
