@@ -1,16 +1,27 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
 import { Suspense } from "react";
 import { useLoader, Canvas, useThree } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { Environment, Html, OrbitControls, useProgress } from "@react-three/drei";
+import { Goldman } from "next/font/google";
 
 const Wolf = () => {
-    const [progress, setProgress] = useState(0);
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  const LoadingBar = () => {
+    const { progress } = useProgress();
+    const percentage = Math.round(progress);
+
+    return (
+        <Html className="relative lg:-left-[8rem] flex justify-start text-gold font-donpoligrafbum text-[36px]">
+          {percentage}% Loading...
+        </Html>
+    );
+  };
 
 
-    const mobileAndTabletCheck = () => {
+  const mobileAndTabletCheck = () => {
     let check = false;
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
     if (
@@ -32,14 +43,10 @@ const Wolf = () => {
     }
   }, []);
   const Model = () => {
-      const gltf = useLoader(GLTFLoader, "/wolf/textured wolf v2.gltf", (loader) => {
-          loader.onProgress = (event) => {
-              const loaded = event.loaded / event.total; // Calculate the progress percentage
-              setProgress(loaded * 100); // Update the progress state
-          };
-      });
+    const gltf = useLoader(GLTFLoader, "/wolf/textured wolf v2.gltf");
+    const { size } = useThree();
 
-      const { size } = useThree();
+
     gltf.scene.children[0].position.set(0, -0.002, 0);
     if (typeof window !== "undefined" && mobileAndTabletCheck()) {
       gltf.scene.scale.set(250, 250, 250);
@@ -57,39 +64,40 @@ const Wolf = () => {
     );
   };
   return (
-    <div className="h-full w-full relative z-1">
-
-      <Canvas
-        className="z-50"
-        shadows
-        dpr={[1, 2]}
-        camera={{ position: [0, 9, 15], fov: 40 }}
-        style={{ pointerEvents: 'auto' }}
-
-      >
-        <ambientLight intensity={0.5} />
-        <spotLight
-          intensity={0.3}
-          angle={1}
-          penumbra={8}
-          position={[8, 8, 10]}
-        />
-
-          <Suspense fallback={null}>
-              <Model />
-              <Environment preset="city" />
-          </Suspense>
-        <OrbitControls 
-          enableDamping={false} 
-          enablePan={false} enableZoom={false} 
-          maxPolarAngle={Math.PI/2} minPolarAngle={Math.PI/2} 
-          maxAzimuthAngle={Math.PI/3} minAzimuthAngle={-Math.PI/3}
-          rotateSpeed={0.2}
-        />
-      </Canvas>
-    </div>
+      <div className="h-full w-full relative z-1">
+        <Canvas
+            className="z-50"
+            shadows
+            dpr={[1, 2]}
+            camera={{ position: [0, 9, 15], fov: 40 }}
+            style={{ pointerEvents: 'auto' }}
+        >
+          <ambientLight intensity={0.5} />
+          <spotLight intensity={0.3} angle={1} penumbra={8} position={[8, 8, 10]} />
+          {isLoading ? (
+              <Suspense fallback={<LoadingBar />}>
+                <Model />
+                <Environment preset="city" />
+              </Suspense>
+          ) : (
+              <>
+                <Model />
+                <Environment preset="city" />
+              </>
+          )}
+          <OrbitControls
+              enableDamping={false}
+              enablePan={false}
+              enableZoom={false}
+              maxPolarAngle={Math.PI / 2}
+              minPolarAngle={Math.PI / 2}
+              maxAzimuthAngle={Math.PI / 3}
+              minAzimuthAngle={-Math.PI / 3}
+              rotateSpeed={0.2}
+          />
+        </Canvas>
+      </div>
   );
 };
-
 
 export default Wolf;
